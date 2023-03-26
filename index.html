@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Screen | RNA</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Green Screen. Try it out!</h1>
+      <div class="options">
+        <label class="upload-btn" for="file-fore">Add foreground</label>
+        <input
+          type="file"
+          id="file-fore"
+          multiple="false"
+          accept="image/*"
+          value=""
+        />
+        <label class="upload-btn" for="file-back">Add background</label>
+        <input
+          type="file"
+          id="file-back"
+          multiple="false"
+          accept="image/*"
+          value=""
+        />
+        <button type="button" class="clear disabled">Clear</button>
+        <button type="button" class="merge disabled">Merge</button>
+      </div>
+      <div class="canvas-container">
+        <canvas id="canvas"></canvas>
+        <canvas id="canvas-grayed"></canvas>
+      </div>
+    </div>
+    <script src="./js/SampleImage.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
