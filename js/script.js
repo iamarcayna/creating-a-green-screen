@@ -70,5 +70,6 @@ mergeBtn.addEventListener("click", () => {
     }
     imgOutput.drawTo(canvasBack);
     imgOutput.drawTo(canvasFore);
+    mergeBtn.classList.add("disabled");
   }
 });

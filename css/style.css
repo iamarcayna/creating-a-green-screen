@@ -46,6 +46,7 @@ h1 {
   background: #7c7f87;
   color: #414141;
   cursor: default;
+  pointer-events: none;
 }
 .options .clear {
   background: #8a2043;
